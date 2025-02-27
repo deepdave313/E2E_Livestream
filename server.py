@@ -12,6 +12,8 @@ print(f"Server listening on {HOST}:{PORT}")
 client_socket, client_address = server_socket.accept()
 print(f"Connected by {client_address}")
 
+print("Hi from server")
+
 while True:
     # Receive encrypted data from client
     encrypted_data = client_socket.recv(1024)
